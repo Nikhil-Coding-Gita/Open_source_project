@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Community</title>
+	<style>
+		* { box-sizing: border-box; }
+		body { margin: 0; font-family: Arial, sans-serif; }
+		.navbar {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 24px;
+			padding: 16px 7%;
+			background: #fff;
+			border-bottom: 1px solid #e5e7eb;
+		}
+		.brand { color: #172554; font-size: 1.25rem; font-weight: 700; text-decoration: none; }
+		.nav-links { display: flex; align-items: center; gap: 28px; margin: 0; padding: 0; list-style: none; }
+		.nav-links a { color: #4b5563; text-decoration: none; }
+		.nav-links a:hover { color: #2563eb; }
+		.join-button { padding: 10px 16px; border-radius: 6px; background: #2563eb; color: #fff; font-weight: 600; text-decoration: none; }
+		.join-button:hover { background: #1d4ed8; }
+		@media (max-width: 600px) {
+			.navbar { flex-wrap: wrap; padding: 16px 5%; }
+			.nav-links { order: 3; width: 100%; justify-content: space-between; gap: 12px; }
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav class="navbar" aria-label="Main navigation">
+			<a class="brand" href="#home">Community</a>
+			<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#events">Events</a></li>
+				<li><a href="#members">Members</a></li>
+				<li><a href="#resources">Resources</a></li>
+			</ul>
+			<a class="join-button" href="#join">Join the community</a>
+		</nav>
+	</header>
+</body>
+</html>
